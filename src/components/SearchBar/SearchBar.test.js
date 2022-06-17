@@ -1,9 +1,8 @@
-import { render, screen } from "@testing-library/react";
-import App from "./App";
-import { Button } from "./components/SearchBar/Button/Button";
-import { Input } from "./components/SearchBar/Input/Input";
+import { screen, render } from "@testing-library/react";
+import { Button } from "../button/Button";
+import { Input } from "../input/Input";
 
-test("renders the app with an input and a button", () => {
+test("renders an input and a button", () => {
     render(
         <div>
             <Input type="text" />

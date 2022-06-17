@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CountryFlag } from "../countryFlag/CountryFlag";
+import { CountryFlag } from "../CountryFlag/CountryFlag";
 
 export const Nationality = ({ country, prob }) => {
     return (

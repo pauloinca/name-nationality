@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 export const SearchBar = () => {
-    const { getNatios, natioState } = useNatio();
+    const { getNatios } = useNatio();
     const [nameForSearch, setNameForSearch] = useState();
 
     const submitName = () => {
@@ -23,11 +23,9 @@ export const SearchBar = () => {
                     placeholder="Buscar nome"
                 />
             </InputWrapper>
-            <>
-                <Button type="submit" onClick={submitName}>
-                    <FaSearch />
-                </Button>
-            </>
+            <Button type="submit" onClick={submitName}>
+                <FaSearch />
+            </Button>
         </>
     );
 };
